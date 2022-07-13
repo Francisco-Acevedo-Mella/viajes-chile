@@ -1,0 +1,12 @@
+.header {
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header .navbar {
+    background-color: transparent !important;
+}
+.navbar img {
+    width: 1px;
+    height: 1px;
+}
