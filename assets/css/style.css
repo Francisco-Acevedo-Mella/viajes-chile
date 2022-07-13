@@ -1,12 +1,35 @@
-.header {
-    background-size: cover;
-    min-height: 100vh;
-}
+
 
 .header .navbar {
     background-color: transparent !important;
 }
 .navbar img {
-    width: 1px;
-    height: 1px;
+    width: 6%;
+    height: auto;
+}
+main {
+    background-color: #000000;
+}
+
+h2 {
+    color: #ffffff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+hr {
+    color:#17a3b8 ;
+    size: 10px;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color:#17a3b8;
 }
