@@ -14,7 +14,9 @@ main {
 h2 {
     color: #ffffff;
     padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 hr {
@@ -24,6 +26,8 @@ hr {
 
 footer h1 {
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 footer i {
@@ -36,4 +40,19 @@ footer i {
 
 footer {
     background-color:#17a3b8;
+}
+
+section {
+    background-color: #000000;
+}
+
+#contacto2 {
+    height: 20em;
+    width: 80% ;
+    padding-top: 10px;
+}
+
+.contacto3 {
+    padding-top: 100px;
+    
 }

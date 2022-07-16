@@ -8,6 +8,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/710617f316.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Viajes Chile</title>
 </head>
@@ -19,7 +24,7 @@
 
     <header class="header">
     
-    <nav class="navbar navbar-expand-lg bg-transparent navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg bg-transparent text-light bg-light fixed-top">
         
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="./assets/img/viajes.svg"  alt="" srcset="">Viajes Chile</a>
@@ -28,7 +33,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 
-            </button>
+            </button class="text-light bg-light" >
             <div class="collapse navbar-collapse" id="navbarNav">
                 
                 <ul class="navbar-nav m-auto">
@@ -37,13 +42,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quienes somos</a>
+                        <a class="nav-link" href="#quienes">Quienes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destacados</a>
+                        <a class="nav-link" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contactos</a>
+                        <a class="nav-link" href="#contacto">Contactos</a>
                     </li>
                 </ul>
             </div>
@@ -81,24 +86,24 @@
 
     <!-- Tarjetas texto -->
 
-    <main class="row d-flex justify-content-center">
+    <main class="row d-flex justify-content-center align-self-center" id="quienes">
         <h2 class="text-center">¿Quienes somos?</h2>
         <hr>
-        <div class="col p-5 text-white">
+        <div class="col-12 col-md-6 col-lg-3 p-5 text-white">
             <div class="text-center" style="background-color:#17a3b8 ;">
                 <i class="fa-solid fa-plane" ></i> 
             </div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa numquam sit maxime? Vel minima, aspernatur molestiae quos assumenda odio quas voluptas, inventore odit placeat dolores tempore pariatur eum eveniet harum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa velit sunt expedita rem architecto. Temporibus commodi corporis quidem numquam, quo pariatur earum repellat voluptates dolor vel illo error omnis. Placeat!</p>
         </div>
 
-        <div class="col p-5 text-white">
+        <div class="col-12 col-md-6 col-lg-3 p-5 text-white">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa numquam sit maxime? Vel minima, aspernatur molestiae quos assumenda odio quas voluptas, inventore odit placeat dolores tempore pariatur eum eveniet harum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, asperiores. Nobis cum veritatis ipsam sed quibusdam! Quidem explicabo facere consequuntur. Laboriosam quasi molestiae, nobis tempora cupiditate sapiente debitis earum fuga.</p>
             <div class="text-center" style="background-color:#17a3b8 ;">
                 <i class="fa-solid fa-umbrella-beach"></i>
             </div>
         </div>
 
-        <div class="col p-5 text-white">
+        <div class="col-12 col-md-6 col-lg-3 p-5 text-white">
             <div class="text-center" style="background-color:#17a3b8 ;">
                 <i class="fa-solid fa-route "></i>
             </div>
@@ -107,53 +112,61 @@
 
         <!-- tarjetas con imagenes -->
 
-        <h2 class="text-center">Destacados</h2>
+        <h2 class="text-center" id="destacados">Destacados</h2>
         <hr size="10px" width="75%">
-        <div class="col-12 col-md-6 col-lg-3" >
+        <div class="col-12 col-md-6 col-lg-3 px-5 py-2" >
             <div class="card " style="width: 18rem;">
                 <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
                 <div class="card-body" style="background-color:#17a3b8 ;">
-                    <h5 class="card-title text-center">Torres del Paine</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title text-center text-light">Torres del Paine</h5>
+                    <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 px-5 py-2">
             <div class="card col-12 col-md-6" style="width: 18rem;">
                 <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
                 <div class="card-body" style="background-color:#17a3b8 ;">
-                    <h5 class="card-title text-center">Lago Chungara</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title text-center text-light">Lago Chungara</h5>
+                    <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 px-5 py-2">
             <div class="card col-12 col-md-6" style="width: 18rem;">
                 <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
                 <div class="card-body" style="background-color:#17a3b8 ;">
-                    <h5 class="card-title text-center">Isla Damas</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title text-center text-light">Isla Damas</h5>
+                    <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 px-5 py-3">
             <div class="card col-12 col-md-6" style="width: 18rem;">
                 <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
                 <div class="card-body" style="background-color:#17a3b8 ;">
-                    <h5 class="card-title text-center">Selva Valdiviana</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title text-center text-light">Selva Valdiviana</h5>
+                    <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
-
-        <h2 class="text-center">Contacto</h2>
-        <hr size="10px" width="75%">
     </main>
 
-        <!-- Footer -->
+    <section class="row justify-content-center align-items-center">
+        <h2 class="text-center" id="contacto">Contacto</h2>
+        <hr size="10px" width="75%">
+        <div class="text-center bg-light mt-1 mb-5" id="contacto2">
+            <div class="contacto3">
+            <h5 class="">Hola, Gracias por contactarnos</h5>
+            <button type="button" class="btn btn-primary">Comenzar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
 
     <footer class="row d-flex justify-content-evenly">
 
@@ -162,10 +175,10 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-evenly align-self-center">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
+            <a href=""> <i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
         </div>
     </footer>
 
